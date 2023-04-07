@@ -1,0 +1,22 @@
+.root {
+  display: flex;
+  flex-direction: column;
+}
+.imageBox {
+  width: 600px;
+  height: 600px;
+  border: 1px solid gray;
+  cursor: pointer;
+}
+.price {
+  color: deepskyblue;
+}
+.title {
+  color: black;
+}
+.description {
+  color: black;
+}
+.adress {
+  color: gray;
+}

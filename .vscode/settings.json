@@ -1,0 +1,13 @@
+{
+  "explorer.compactFolders": false,
+  "explorer.decorations.badges": true,
+  "explorer.decorations.colors": true,
+  "explorer.expandSingleFolderWorkspaces": true,
+  "explorer.fileNesting.enabled": false,
+  "explorer.fileNesting.expand": true,
+  "explorer.openEditors.sortOrder": "editorOrder",
+  "outline.icons": true,
+  "outline.problems.colors": true,
+  "terminal.integrated.cursorBlinking": true,
+  "terminal.integrated.cursorStyle": "line"
+}
