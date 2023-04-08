@@ -14,13 +14,15 @@ export default function Home() {
   }, []);
 
   return (
-    <div>
-      <h2>Products for you</h2>
+    <div className={styles.root}>
+      <div className={styles.productItemsBox}>
+        <h1 className={styles.title}>Products for you</h1>
 
-      <div className={styles.cardsContainer}>
-        {productItems.map((item) => (
-          <ItemCard key={item.id} item={item} />
-        ))}
+        <div className={styles.cardsContainer}>
+          {productItems.map((item) => (
+            <ItemCard key={item.id} item={item} />
+          ))}
+        </div>
       </div>
     </div>
   );

@@ -1,3 +1,17 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  padding: 0 40px;
+}
+.productItemsBox {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.title {
+  font-size: 25px;
+  margin: 60px 0 20px;
+}
 .cardsContainer {
   display: flex;
   flex-direction: row;

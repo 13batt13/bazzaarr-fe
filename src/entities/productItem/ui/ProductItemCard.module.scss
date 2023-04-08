@@ -4,9 +4,10 @@
   cursor: pointer;
 }
 .cardImageBox {
-  width: 200px;
-  height: 200px;
-  border: 1px solid gray;
+  width: 250px;
+  height: 180px;
+  border: 1px solid lightgray;
+  border-radius: 10px;
 }
 .price {
   color: deepskyblue;
