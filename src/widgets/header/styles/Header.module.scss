@@ -1,0 +1,65 @@
+.root {
+  position: sticky;
+  top: 0px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  min-width: 50vw;
+
+  height: 10vh;
+  max-height: 80px;
+  padding: 0 10px;
+
+  border-radius: 0 0 30px 30px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 20px;
+  background-color: #fff;
+
+  border: 1px solid red;
+}
+.logoWrapper {
+  img {
+    width: 250px;
+    // height: auto;
+  }
+}
+.searchBox {
+  display: flex;
+  flex-grow: 1;
+
+  padding: 0 50px;
+  height: 40px;
+  margin-top: 10px;
+
+  input {
+    width: 100%;
+    padding-left: 10px;
+    background-color: rgb(237, 237, 237);
+    border: none;
+  }
+}
+.searchButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  font-size: 40px;
+  background-color: rgb(208, 0, 0);
+  color: white;
+  border: none;
+  border-radius: 0 8px 8px 0;
+  cursor: pointer;
+}
+.userButtons {
+  display: flex;
+  height: 40px;
+  margin-top: 10px;
+  gap: 5px;
+  button {
+    border: none;
+    border-radius: 8px;
+    background-color: rgb(208, 0, 0);
+    color: white;
+  }
+}

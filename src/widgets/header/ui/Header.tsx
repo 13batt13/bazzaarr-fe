@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
-import styles from "widgets/header/Header.module.scss";
+import styles from "widgets/header/styles/Header.module.scss";
 import logo from "shared/images/logo.png";
+import Categories from "./Categories";
 
 export default function Header() {
   return (
@@ -11,12 +12,13 @@ export default function Header() {
         </Link>
       </div>
       <div className={styles.searchBox}>
-        <button>Categories</button>
+        <Categories />
         <input type="text" placeholder="Search..." />
+        <button className={styles.searchButton}>⌕</button>
       </div>
       <div className={styles.userButtons}>
         <button>
-          <Link to="/favorites">Favorites</Link>
+          <Link to="/favorites">Wishlist</Link>
         </button>
         <button>
           <Link to="/profile">Profile</Link>

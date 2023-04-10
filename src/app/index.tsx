@@ -1,7 +1,8 @@
-import { withProviders } from "app/providers";
-
 import PagesRouting from "pages";
-import Header from "widgets/header/Header";
+import { Header } from "widgets/header";
+import { withProviders } from "./providers";
+
+import "./styles/index.scss";
 
 function App() {
   return (

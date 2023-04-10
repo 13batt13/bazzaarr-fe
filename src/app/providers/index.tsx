@@ -1,4 +1,4 @@
 import compose from "compose-function";
-import { withRouter } from "app/providers/withRouter";
+import { withRouter } from "./withRouter";
 
 export const withProviders = compose(withRouter);

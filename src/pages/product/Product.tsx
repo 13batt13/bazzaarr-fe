@@ -1,12 +1,12 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import { useLocation } from "react-router";
-import { ProductItem } from "shared/types";
-import styles from "pages/product/Product.module.scss";
+import styles from "./Product.module.scss";
+import { ProductItem } from "entities/productItem/types";
 
 const initialProductItem = {
   id: "",
-  images: [],
+  images: [""],
   category: "",
   price: "",
   title: "",
@@ -24,7 +24,7 @@ export default function Product() {
     useState<ProductItem>(initialProductItem);
 
   useEffect(() => {
-    axios.get(`http://localhost:3001/items/${id}`).then((response) => {
+    axios.get(`http://localhost:4000/items/${id}`).then((response) => {
       setProductItem(response.data);
     });
   }, [id]);

@@ -1,6 +1,6 @@
-import styles from "entities/productItem/ui/ProductItemCard.module.scss";
+import styles from "./ProductItemCard.module.scss";
 import { useNavigate } from "react-router";
-import { ProductItem } from "shared/types";
+import { ProductItem } from "entities/productItem/types";
 
 interface ProductItemCardProps {
   item: ProductItem;
