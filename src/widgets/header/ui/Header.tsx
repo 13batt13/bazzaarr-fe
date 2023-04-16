@@ -6,6 +6,7 @@ import HeartIcon from "shared/assets/icons/heart.svg";
 import UserIcon from "shared/assets/icons/user.svg";
 import logo from "shared/assets/images/logo.png";
 import Categories from "./Categories";
+import { ButtonWithIcon } from "shared/ui/buttons/ButtonWithIcon";
 
 export function Header() {
   return (
@@ -22,12 +23,9 @@ export function Header() {
           <button className={styles.searchButton}>⌕</button>
         </div>
         <div className={styles.userButtons}>
-          <Link to="/favorites">
-            <button>
-              <HeartIcon width="24px" height="24px" fill="#ffffff" />
-              Wishlist
-            </button>
-          </Link>
+          <ButtonWithIcon to="/favorites" title="Wishlist">
+            <HeartIcon width="24px" height="24px" fill="#ffffff" />
+          </ButtonWithIcon>
           <Link to="/profile">
             <button>
               <UserIcon width="24px" height="24px" />

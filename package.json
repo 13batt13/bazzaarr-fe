@@ -12,6 +12,8 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@babel/core": "7.21.4",
+    "@babel/preset-env": "7.21.4",
     "@svgr/webpack": "7.0.0",
     "@types/compose-function": "0.0.30",
     "@types/node": "18.15.11",
@@ -21,6 +23,8 @@
     "@types/react-router-dom": "5.3.3",
     "@types/webpack": "5.28.1",
     "@types/webpack-dev-server": "4.7.2",
+    "babel-loader": "9.1.2",
+    "babel-plugin-i18next-extract": "0.9.0",
     "compose-function": "3.0.3",
     "css-loader": "6.7.3",
     "html-webpack-plugin": "5.5.0",

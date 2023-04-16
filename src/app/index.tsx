@@ -1,4 +1,4 @@
-import { AppRouting } from "app/providers/router/AppRouting";
+import { AppRouter } from "app/providers/router/ui/AppRouter";
 import { Header } from "widgets/header";
 
 import "./styles/index.scss";
@@ -14,7 +14,7 @@ export default function App() {
   return (
     <>
       <Header />
-      <AppRouting />
+      <AppRouter />
     </>
   );
 }
