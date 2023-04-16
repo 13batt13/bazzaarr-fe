@@ -1,13 +1,16 @@
+import { useTranslation } from "react-i18next";
+import i18n from "shared/config/i18n/i18n";
+
 export default function Profile() {
+  const { t } = useTranslation();
+  const handleClick = () => {
+    i18n.changeLanguage(i18n.language === "en" ? "ru" : "en");
+  };
   return (
     <div>
       <h2>Profile</h2>
-      <span>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium,
-        fuga. Iusto mollitia omnis asperiores? Facilis repudiandae similique,
-        laboriosam fuga asperiores eaque suscipit amet sapiente nihil expedita
-        ducimus doloribus ipsam voluptas.
-      </span>
+      <button onClick={handleClick}>{t("test_button")}</button>
+      <span>{t("test")}</span>
     </div>
   );
 }

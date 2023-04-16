@@ -1,15 +1,20 @@
-import PagesRouting from "pages";
+import { AppRouting } from "app/providers/router/AppRouting";
 import { Header } from "widgets/header";
-import { withProviders } from "./providers";
 
 import "./styles/index.scss";
+import { useEffect } from "react";
+import { useNavigate } from "react-router";
 
-function App() {
+export default function App() {
+  const navigate = useNavigate();
+  useEffect(() => {
+    navigate(window.location.pathname);
+  }, []);
+
   return (
     <>
       <Header />
-      <PagesRouting />
+      <AppRouting />
     </>
   );
 }
-export default withProviders(App);

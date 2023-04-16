@@ -28,10 +28,15 @@ export function buildLoaders({ isDev }: BuildOptions): webpack.RuleSetRule[] {
     exclude: /node_modules/,
   };
 
+  const svgLoader = {
+    test: /\.svg$/,
+    use: ["@svgr/webpack"],
+  };
+
   const imagesLoader = {
     test: /\.(jpe?g|png|gif|ico)$/,
     type: "asset/resource",
   };
 
-  return [typescriptLoader, cssLoader, imagesLoader];
+  return [typescriptLoader, cssLoader, svgLoader, imagesLoader];
 }

@@ -1,7 +1,9 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
-import { useLocation } from "react-router";
+import { useParams } from "react-router";
+
 import styles from "./Product.module.scss";
+
 import { ProductItem } from "entities/productItem/types";
 
 const initialProductItem = {
@@ -16,15 +18,15 @@ const initialProductItem = {
 };
 
 export default function Product() {
-  const {
-    state: { id },
-  } = useLocation();
+  let { id } = useParams();
 
   const [productItem, setProductItem] =
     useState<ProductItem>(initialProductItem);
 
   useEffect(() => {
     axios.get(`http://localhost:4000/items/${id}`).then((response) => {
+      console.log("🚀 ~ axios.get ~ response:", response);
+
       setProductItem(response.data);
     });
   }, [id]);

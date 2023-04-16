@@ -1,4 +1,3 @@
-import compose from "compose-function";
-import { withRouter } from "./withRouter";
+export { AppRouting } from "./router/AppRouting";
 
-export const withProviders = compose(withRouter);
+// export { AppRouting };

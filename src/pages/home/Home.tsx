@@ -15,16 +15,17 @@ export default function Home() {
 
   return (
     <div className={styles.root}>
-      <h1 className={styles.title}>Products for you</h1>
-
-      <div className={styles.productItemsBox}>
+      <div className={styles.titleWrapper}>
+        <h1 className={styles.title}>Products for you</h1>
+      </div>
+      <div className={styles.mainBox}>
         <div className={styles.cardsContainer}>
           {productItems.map((item) => (
             <ItemCard key={item.id} item={item} />
           ))}
         </div>
         <div className={styles.featuresContainer}>
-          <span>History</span>
+          <span>Recently viewed products</span>
           <div>
             <div className={styles.historyItem}>
               <div></div>
