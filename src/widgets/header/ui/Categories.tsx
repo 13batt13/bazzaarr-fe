@@ -1,6 +1,6 @@
-import { Link } from "react-router-dom";
-import styles from "widgets/header/styles/Categories.module.scss";
-import { MouseEventHandler, useState } from "react";
+import { Link } from 'react-router-dom';
+import styles from 'widgets/header/styles/Categories.module.scss';
+import { MouseEventHandler, useState } from 'react';
 
 export default function Categories() {
   const [isOpenDropdown, setIsOpenDropdown] = useState(false);
@@ -16,7 +16,7 @@ export default function Categories() {
         setIsOpenDropdown(false);
       }}
     >
-      <button onClick={handleOpenDropdown} className={styles.categoriesButton}>
+      <button onClick={handleOpenDropdown} className={styles.categoriesButton} type="button">
         All Categories
       </button>
       {isOpenDropdown && (

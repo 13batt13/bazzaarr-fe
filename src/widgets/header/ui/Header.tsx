@@ -1,12 +1,11 @@
-import { Link } from "react-router-dom";
+import { Link } from 'react-router-dom';
 
-import styles from "../styles/Header.module.scss";
-
-import HeartIcon from "shared/assets/icons/heart.svg";
-import UserIcon from "shared/assets/icons/user.svg";
-import logo from "shared/assets/images/logo.png";
-import Categories from "./Categories";
-import { ButtonWithIcon } from "shared/ui/buttons/ButtonWithIcon";
+import HeartIcon from 'shared/assets/icons/heart.svg';
+import UserIcon from 'shared/assets/icons/user.svg';
+import logo from 'shared/assets/images/logo.png';
+import { ButtonWithIcon } from 'shared/ui/buttons/ButtonWithIcon';
+import Categories from './Categories';
+import styles from '../styles/Header.module.scss';
 
 export function Header() {
   return (
@@ -20,14 +19,14 @@ export function Header() {
         <div className={styles.searchBox}>
           <Categories />
           <input type="text" placeholder="Search..." />
-          <button className={styles.searchButton}>⌕</button>
+          <button className={styles.searchButton} type="button">⌕</button>
         </div>
         <div className={styles.userButtons}>
           <ButtonWithIcon to="/favorites" title="Wishlist">
             <HeartIcon width="24px" height="24px" fill="#ffffff" />
           </ButtonWithIcon>
           <Link to="/profile">
-            <button>
+            <button type="button">
               <UserIcon width="24px" height="24px" />
             </button>
           </Link>

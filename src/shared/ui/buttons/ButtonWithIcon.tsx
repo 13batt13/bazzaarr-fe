@@ -1,5 +1,5 @@
-import { ButtonHTMLAttributes, FC } from "react";
-import { Link } from "react-router-dom";
+import { ButtonHTMLAttributes, FC } from 'react';
+import { Link } from 'react-router-dom';
 
 interface ButtonWithIconProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   title: string;
@@ -12,7 +12,7 @@ export const ButtonWithIcon: FC<ButtonWithIconProps> = ({
   to,
 }) => (
   <Link to={to}>
-    <button>
+    <button type="button">
       {children}
       {title}
     </button>
