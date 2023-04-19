@@ -1,17 +1,14 @@
 .root {
   position: sticky;
-  top: 0px;
-
+  top: 0;
   display: flex;
   justify-content: center;
   align-items: center;
-
   min-width: 850px;
   height: 80px;
   padding: 0 20px;
-
   border-radius: 0 0 30px 30px;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 20px;
+  box-shadow: rgb(0 0 0 / 10%) 0 1px 20px;
   background-color: #fff;
 }
 
@@ -29,6 +26,7 @@
   align-items: center;
   width: 280px;
   height: 80px;
+
   img {
     height: 60px;
   }
@@ -38,17 +36,18 @@
   display: flex;
   align-items: center;
   flex: 1;
-
   height: 80px;
   padding-left: 10px;
+
   input {
     height: 40px;
     width: 100%;
     padding: 0 10px;
-    background-color: rgb(237, 237, 237);
+    background-color: rgb(237 237 237);
     border: none;
   }
-  @media (max-width: 800px) {
+
+  @media (width <=800px) {
     border: none;
   }
 }
@@ -57,12 +56,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
   width: 50px;
   height: 40px;
   margin-right: 10px;
   font-size: 35px;
-  background-color: rgb(229, 49, 56);
+  background-color: rgb(229 49 56);
   color: white;
   border: none;
   border-radius: 0 8px 8px 0;
@@ -75,13 +73,12 @@
   align-items: center;
   height: 80px;
   width: 280px;
-  // a {
+
   button {
     border: none;
     border-radius: 8px;
     height: 40px;
     background-color: transparent;
-    color: rgb(229, 49, 56);
+    color: rgb(229 49 56);
   }
-  // }
 }

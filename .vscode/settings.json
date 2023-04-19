@@ -9,5 +9,10 @@
   "outline.icons": true,
   "outline.problems.colors": true,
   "terminal.integrated.cursorBlinking": true,
-  "terminal.integrated.cursorStyle": "line"
+  "terminal.integrated.cursorStyle": "line",
+  "css.validate": false,
+  "less.validate": false,
+  "scss.validate": false,
+  "stylelint.enable": true,
+  "stylelint.validate": ["css", "scss"]
 }

@@ -7,6 +7,7 @@ module.exports = {
     "plugin:react/recommended",
     "airbnb",
     "plugin:prettier/recommended",
+    "plugin:i18next/recommended",
   ],
   parser: "@typescript-eslint/parser",
   parserOptions: {
@@ -16,7 +17,7 @@ module.exports = {
     ecmaVersion: "latest",
     sourceType: "module",
   },
-  plugins: ["react", "@typescript-eslint", "prettier"],
+  plugins: ["react", "@typescript-eslint", "i18next", "prettier"],
   rules: {
     "react/jsx-filename-extension": [
       2,
