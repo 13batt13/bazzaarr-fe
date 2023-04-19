@@ -1,14 +1,14 @@
-import axios from 'axios';
-import ItemCard from 'entities/productItem/ui/ProductItemCard';
-import { useEffect, useState } from 'react';
-import { ProductItem } from 'entities/productItem/types';
-import styles from './Home.module.scss';
+import axios from "axios";
+import ItemCard from "entities/productItem/ui/ProductItemCard";
+import { useEffect, useState } from "react";
+import { ProductItem } from "entities/productItem/types";
+import styles from "./Home.module.scss";
 
 export default function Home() {
   const [productItems, setProductItems] = useState<ProductItem[]>([]);
 
   useEffect(() => {
-    axios.get('http://localhost:4000/items').then((response) => {
+    axios.get("http://localhost:4000/items").then((response) => {
       setProductItems(response.data);
     });
   }, []);

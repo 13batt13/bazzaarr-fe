@@ -1,25 +1,26 @@
-import axios from 'axios';
-import { useEffect, useState } from 'react';
-import { useParams } from 'react-router';
+import axios from "axios";
+import { useEffect, useState } from "react";
+import { useParams } from "react-router";
 
-import { ProductItem } from 'entities/productItem/types';
-import styles from './Product.module.scss';
+import { ProductItem } from "entities/productItem/types";
+import styles from "./Product.module.scss";
 
 const initialProductItem = {
-  id: '',
-  images: [''],
-  category: '',
-  price: '',
-  title: '',
-  description: '',
-  city: '',
-  adress: '',
+  id: "",
+  images: [""],
+  category: "",
+  price: "",
+  title: "",
+  description: "",
+  city: "",
+  adress: "",
 };
 
 export default function Product() {
   const { id } = useParams();
 
-  const [productItem, setProductItem] = useState<ProductItem>(initialProductItem);
+  const [productItem, setProductItem] =
+    useState<ProductItem>(initialProductItem);
 
   useEffect(() => {
     axios.get(`http://localhost:4000/items/${id}`).then((response) => {
@@ -34,11 +35,7 @@ export default function Product() {
       </div>
       <div>
         <span className={styles.title}>{productItem.title}</span>
-        <span className={styles.price}>
-          {productItem.price}
-          {' '}
-          rub
-        </span>
+        <span className={styles.price}>{productItem.price} rub</span>
       </div>
       <span className={styles.description}>{productItem.description}</span>
       <div>

@@ -1,7 +1,7 @@
-import { Suspense } from 'react';
-import { Outlet, Route, Routes } from 'react-router-dom';
-import { routeConfig } from 'shared/config/routeConfig/routeConfig';
-import { Spinner } from 'shared/ui/spinner/Spinner';
+import { Suspense } from "react";
+import { Outlet, Route, Routes } from "react-router-dom";
+import { routeConfig } from "shared/config/routeConfig/routeConfig";
+import { Spinner } from "shared/ui/spinner/Spinner";
 
 export function AppRouter() {
   return (
