@@ -1,18 +1,12 @@
 import { useTranslation } from "react-i18next";
-import i18n from "shared/config/i18n/i18n";
 
 export default function Profile() {
   const { t } = useTranslation();
-  const handleClick = () => {
-    i18n.changeLanguage(i18n.language === "en" ? "ru" : "en");
-  };
+
   return (
     <div>
-      <h2>Profile</h2>
-      <button onClick={handleClick} type="button">
-        {t("test_button")}
-      </button>
-      <span>{t("test")}</span>
+      <h2>{t("profile.title")}</h2>
+      <span>{t("profile.description")}</span>
     </div>
   );
 }

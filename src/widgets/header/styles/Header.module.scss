@@ -59,7 +59,6 @@
   width: 50px;
   height: 40px;
   margin-right: 10px;
-  font-size: 35px;
   background-color: rgb(229 49 56);
   color: white;
   border: none;
@@ -69,16 +68,9 @@
 
 .userButtons {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
+  gap: 24px;
   height: 80px;
   width: 280px;
-
-  button {
-    border: none;
-    border-radius: 8px;
-    height: 40px;
-    background-color: transparent;
-    color: rgb(229 49 56);
-  }
 }

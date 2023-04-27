@@ -1,4 +1,31 @@
 {
+  "favorites": {
+    "description": "description",
+    "title": "title"
+  },
+  "header": {
+    "categories": "categories",
+    "log_in": "log_in",
+    "search_placeholder": "search_placeholder",
+    "translate_btn": "translate_btn",
+    "wishlist": "wishlist"
+  },
+  "home": {
+    "for_you": "for_you",
+    "recent": "recent"
+  },
+  "not_found": {
+    "link": "link",
+    "title": "title"
+  },
+  "page_error": {
+    "button": "button",
+    "title": "title"
+  },
+  "profile": {
+    "description": "description",
+    "title": "title"
+  },
   "test": "test",
   "test_button": "test_button"
 }

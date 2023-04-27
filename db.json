@@ -5,240 +5,360 @@
       "images": ["", "", ""],
       "category": "auto",
       "price": "1000000",
+      "currency": "rub",
       "title": "Lada Granta",
       "description": "A bucket of bolts",
-      "city": "Krasnodar",
-      "adress": "Lenina, 1"
+      "adress": {
+        "city": "Krasnodar",
+        "street": "Lenina, 1"
+      },
+      "date": "01/12/2023",
+      "time": "00:00"
     },
     {
       "id": "2",
       "images": ["", "", ""],
       "category": "tech",
       "price": "300",
+      "currency": "rub",
       "title": "PC",
       "description": "Gaming PC",
-      "city": "Krasnodar",
-      "adress": "Lenina, 1"
+      "adress": {
+        "city": "Krasnodar",
+        "street": "Lenina, 1"
+      },
+      "date": "01/12/2023",
+      "time": "00:00"
     },
     {
       "id": "3",
       "images": ["", "", ""],
       "category": "tech",
       "price": "200",
+      "currency": "rub",
       "title": "Playstation",
       "description": "Playstation 6",
-      "city": "Krasnodar",
-      "adress": "Lenina, 1"
+      "adress": {
+        "city": "Krasnodar",
+        "street": "Lenina, 1"
+      },
+      "date": "01/12/2023",
+      "time": "00:00"
     },
     {
       "id": "4",
       "images": ["", "", ""],
       "category": "tech",
       "price": "100",
+      "currency": "rub",
       "title": "Phone",
       "description": "Good Phone",
-      "city": "Krasnodar",
-      "adress": "Lenina, 1"
+      "adress": {
+        "city": "Krasnodar",
+        "street": "Lenina, 1"
+      },
+      "date": "01/12/2023",
+      "time": "00:00"
     },
     {
       "id": "5",
       "images": ["", "", ""],
       "category": "auto",
       "price": "1000000",
+      "currency": "rub",
       "title": "Lada Granta",
       "description": "A bucket of bolts",
-      "city": "Krasnodar",
-      "adress": "Lenina, 1"
+      "adress": {
+        "city": "Krasnodar",
+        "street": "Lenina, 1"
+      },
+      "date": "01/12/2023",
+      "time": "00:00"
     },
     {
       "id": "6",
       "images": ["", "", ""],
       "category": "tech",
       "price": "300",
+      "currency": "rub",
       "title": "PC",
       "description": "Gaming PC",
-      "city": "Krasnodar",
-      "adress": "Lenina, 1"
+      "adress": {
+        "city": "Krasnodar",
+        "street": "Lenina, 1"
+      },
+      "date": "01/12/2023",
+      "time": "00:00"
     },
     {
       "id": "7",
       "images": ["", "", ""],
       "category": "tech",
       "price": "200",
+      "currency": "rub",
       "title": "Playstation",
       "description": "Playstation 6",
-      "city": "Krasnodar",
-      "adress": "Lenina, 1"
+      "adress": {
+        "city": "Krasnodar",
+        "street": "Lenina, 1"
+      },
+      "date": "01/12/2023",
+      "time": "00:00"
     },
     {
       "id": "8",
       "images": ["", "", ""],
       "category": "tech",
       "price": "100",
+      "currency": "rub",
       "title": "Phone",
       "description": "Good Phone",
-      "city": "Krasnodar",
-      "adress": "Lenina, 1"
+      "adress": {
+        "city": "Krasnodar",
+        "street": "Lenina, 1"
+      },
+      "date": "01/12/2023",
+      "time": "00:00"
     },
     {
       "id": "9",
       "images": ["", "", ""],
       "category": "auto",
       "price": "1000000",
+      "currency": "rub",
       "title": "Lada Granta",
       "description": "A bucket of bolts",
-      "city": "Krasnodar",
-      "adress": "Lenina, 1"
+      "adress": {
+        "city": "Krasnodar",
+        "street": "Lenina, 1"
+      },
+      "date": "01/12/2023",
+      "time": "00:00"
     },
     {
       "id": "10",
       "images": ["", "", ""],
       "category": "tech",
       "price": "300",
+      "currency": "rub",
       "title": "PC",
       "description": "Gaming PC",
-      "city": "Krasnodar",
-      "adress": "Lenina, 1"
+      "adress": {
+        "city": "Krasnodar",
+        "street": "Lenina, 1"
+      },
+      "date": "01/12/2023",
+      "time": "00:00"
     },
     {
       "id": "11",
       "images": ["", "", ""],
       "category": "tech",
       "price": "200",
+      "currency": "rub",
       "title": "Playstation",
       "description": "Playstation 6",
-      "city": "Krasnodar",
-      "adress": "Lenina, 1"
+      "adress": {
+        "city": "Krasnodar",
+        "street": "Lenina, 1"
+      },
+      "date": "01/12/2023",
+      "time": "00:00"
     },
     {
       "id": "12",
       "images": ["", "", ""],
       "category": "tech",
       "price": "100",
+      "currency": "rub",
       "title": "Phone",
       "description": "Good Phone",
-      "city": "Krasnodar",
-      "adress": "Lenina, 1"
+      "adress": {
+        "city": "Krasnodar",
+        "street": "Lenina, 1"
+      },
+      "date": "01/12/2023",
+      "time": "00:00"
     },
     {
       "id": "13",
       "images": ["", "", ""],
       "category": "auto",
       "price": "1000000",
+      "currency": "rub",
       "title": "Lada Granta",
       "description": "A bucket of bolts",
-      "city": "Krasnodar",
-      "adress": "Lenina, 1"
+      "adress": {
+        "city": "Krasnodar",
+        "street": "Lenina, 1"
+      },
+      "date": "01/12/2023",
+      "time": "00:00"
     },
     {
       "id": "14",
       "images": ["", "", ""],
       "category": "tech",
       "price": "300",
+      "currency": "rub",
       "title": "PC",
       "description": "Gaming PC",
-      "city": "Krasnodar",
-      "adress": "Lenina, 1"
+      "adress": {
+        "city": "Krasnodar",
+        "street": "Lenina, 1"
+      },
+      "date": "01/12/2023",
+      "time": "00:00"
     },
     {
       "id": "15",
       "images": ["", "", ""],
       "category": "tech",
       "price": "200",
+      "currency": "rub",
       "title": "Playstation",
       "description": "Playstation 6",
-      "city": "Krasnodar",
-      "adress": "Lenina, 1"
+      "adress": {
+        "city": "Krasnodar",
+        "street": "Lenina, 1"
+      },
+      "date": "01/12/2023",
+      "time": "00:00"
     },
     {
       "id": "16",
       "images": ["", "", ""],
       "category": "tech",
       "price": "100",
+      "currency": "rub",
       "title": "Phone",
       "description": "Good Phone",
-      "city": "Krasnodar",
-      "adress": "Lenina, 1"
+      "adress": {
+        "city": "Krasnodar",
+        "street": "Lenina, 1"
+      },
+      "date": "01/12/2023",
+      "time": "00:00"
     },
     {
       "id": "17",
       "images": ["", "", ""],
       "category": "auto",
       "price": "1000000",
+      "currency": "rub",
       "title": "Lada Granta",
       "description": "A bucket of bolts",
-      "city": "Krasnodar",
-      "adress": "Lenina, 1"
+      "adress": {
+        "city": "Krasnodar",
+        "street": "Lenina, 1"
+      },
+      "date": "01/12/2023",
+      "time": "00:00"
     },
     {
       "id": "18",
       "images": ["", "", ""],
       "category": "tech",
       "price": "300",
+      "currency": "rub",
       "title": "PC",
       "description": "Gaming PC",
-      "city": "Krasnodar",
-      "adress": "Lenina, 1"
+      "adress": {
+        "city": "Krasnodar",
+        "street": "Lenina, 1"
+      },
+      "date": "01/12/2023",
+      "time": "00:00"
     },
     {
       "id": "19",
       "images": ["", "", ""],
       "category": "tech",
       "price": "200",
+      "currency": "rub",
       "title": "Playstation",
       "description": "Playstation 6",
-      "city": "Krasnodar",
-      "adress": "Lenina, 1"
+      "adress": {
+        "city": "Krasnodar",
+        "street": "Lenina, 1"
+      },
+      "date": "01/12/2023",
+      "time": "00:00"
     },
     {
       "id": "20",
       "images": ["", "", ""],
       "category": "tech",
       "price": "100",
+      "currency": "rub",
       "title": "Phone",
       "description": "Good Phone",
-      "city": "Krasnodar",
-      "adress": "Lenina, 1"
+      "adress": {
+        "city": "Krasnodar",
+        "street": "Lenina, 1"
+      },
+      "date": "01/12/2023",
+      "time": "00:00"
     },
     {
       "id": "21",
       "images": ["", "", ""],
       "category": "auto",
       "price": "1000000",
+      "currency": "rub",
       "title": "Lada Granta",
       "description": "A bucket of bolts",
-      "city": "Krasnodar",
-      "adress": "Lenina, 1"
+      "adress": {
+        "city": "Krasnodar",
+        "street": "Lenina, 1"
+      },
+      "date": "01/12/2023",
+      "time": "00:00"
     },
     {
       "id": "22",
       "images": ["", "", ""],
       "category": "tech",
       "price": "300",
+      "currency": "rub",
       "title": "PC",
       "description": "Gaming PC",
-      "city": "Krasnodar",
-      "adress": "Lenina, 1"
+      "adress": {
+        "city": "Krasnodar",
+        "street": "Lenina, 1"
+      },
+      "date": "01/12/2023",
+      "time": "00:00"
     },
     {
       "id": "23",
       "images": ["", "", ""],
       "category": "tech",
       "price": "200",
+      "currency": "rub",
       "title": "Playstation",
       "description": "Playstation 6",
-      "city": "Krasnodar",
-      "adress": "Lenina, 1"
+      "adress": {
+        "city": "Krasnodar",
+        "street": "Lenina, 1"
+      },
+      "date": "01/12/2023",
+      "time": "00:00"
     },
     {
       "id": "24",
       "images": ["", "", ""],
       "category": "tech",
       "price": "100",
+      "currency": "rub",
       "title": "Phone",
       "description": "Good Phone",
-      "city": "Krasnodar",
-      "adress": "Lenina, 1"
+      "adress": {
+        "city": "Krasnodar",
+        "street": "Lenina, 1"
+      },
+      "date": "01/12/2023",
+      "time": "00:00"
     }
   ]
 }

@@ -10,10 +10,12 @@ const initialProductItem = {
   images: [""],
   category: "",
   price: "",
+  currency: "",
   title: "",
   description: "",
-  city: "",
-  adress: "",
+  adress: { city: "", street: "" },
+  date: "",
+  time: "",
 };
 
 export default function Product() {
@@ -35,12 +37,12 @@ export default function Product() {
       </div>
       <div>
         <span className={styles.title}>{productItem.title}</span>
-        <span className={styles.price}>{productItem.price} rub</span>
+        <span className={styles.price}>{productItem.price}</span>
       </div>
       <span className={styles.description}>{productItem.description}</span>
       <div>
-        <span className={styles.adress}>{productItem.city}</span>
-        <span className={styles.adress}>{productItem.adress}</span>
+        <span className={styles.adress}>{productItem.adress.city}</span>
+        <span className={styles.adress}>{productItem.adress.street}</span>
       </div>
     </div>
   );

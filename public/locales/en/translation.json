@@ -1,4 +1,28 @@
 {
-  "test": "Test translation",
-  "test_button": "Translate"
+  "header": {
+    "log_in": "Log In",
+    "wishlist": "Wishlist",
+    "search_placeholder": "Search...",
+    "categories": "All Categories"
+  },
+  "home": {
+    "for_you": "Products for you",
+    "recent": "Recently viewed products"
+  },
+  "profile": {
+    "title": "Profile",
+    "description": "Coming soon"
+  },
+  "favorites": {
+    "title": "Favorites",
+    "description": "Coming soon"
+  },
+  "not_found": {
+    "title": "Page not found!",
+    "link": "Go to the home page"
+  },
+  "page_error": {
+    "title": "Unexpected Error",
+    "button": "Reload the page"
+  }
 }

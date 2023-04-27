@@ -1,4 +1,31 @@
 {
   "test": "Тестовый перевод",
-  "test_button": "Перевод"
+  "header": {
+    "log_in": "Войти",
+    "wishlist": "Избранное",
+    "search_placeholder": "Найти...",
+    "categories": "Все категории"
+  },
+  "home": {
+    "for_you": "Товары для Вас",
+    "recent": "Недавно просмотрено"
+  },
+  "product": {},
+  "product_card": {},
+  "profile": {
+    "title": "Профиль",
+    "description": "Скоро будет"
+  },
+  "favorites": {
+    "title": "Избранное",
+    "description": "Скоро будет"
+  },
+  "not_found": {
+    "title": "Такой страницы не существует!",
+    "link": "Вернуться на домашнюю страницу"
+  },
+  "page_error": {
+    "title": "Непредвиденная ошибка",
+    "button": "Перезагрузить страницу"
+  }
 }

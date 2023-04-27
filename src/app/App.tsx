@@ -2,7 +2,7 @@ import { AppRouter } from "app/providers/router/ui/AppRouter";
 import { Header } from "widgets/header";
 
 import "./styles/index.scss";
-import { useEffect } from "react";
+import { Suspense, useEffect } from "react";
 import { useNavigate } from "react-router";
 
 export default function App() {
@@ -12,9 +12,9 @@ export default function App() {
   }, []);
 
   return (
-    <>
+    <Suspense fallback="">
       <Header />
       <AppRouter />
-    </>
+    </Suspense>
   );
 }

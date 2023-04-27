@@ -1,13 +1,12 @@
+import { useTranslation } from "react-i18next";
+
 export default function Favorites() {
+  const { t } = useTranslation();
+
   return (
     <div>
-      <h2>Favorites</h2>
-      <span>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi vitae
-        aliquid amet, aliquam necessitatibus excepturi libero at facere quasi
-        ipsum officia non, soluta esse, deleniti natus assumenda? Placeat, sunt
-        tempore.
-      </span>
+      <h2>{t("favorites.title")}</h2>
+      <span>{t("favorites.description")}</span>
     </div>
   );
 }

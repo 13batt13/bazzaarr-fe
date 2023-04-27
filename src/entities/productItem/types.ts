@@ -3,8 +3,13 @@ export interface ProductItem {
   images: string[];
   category: string;
   price: string;
+  currency: string;
   title: string;
   description: string;
-  city: string;
-  adress: string;
+  adress: {
+    city: string;
+    street: string;
+  };
+  date: string;
+  time: string;
 }
