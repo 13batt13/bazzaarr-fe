@@ -15,7 +15,7 @@ import styles from "../styles/Header.module.scss";
 
 export function Header() {
   const { t } = useTranslation();
-  const changeLanguage = () => {
+  const changeLanguage = async () => {
     i18n.changeLanguage(i18n.language === "en" ? "ru" : "en");
   };
 
@@ -25,7 +25,7 @@ export function Header() {
   };
 
   return (
-    <header className={styles.root}>
+    <header data-testid="header" className={styles.root}>
       <div className={styles.headerWrapper}>
         <div className={styles.logoWrapper}>
           <Link to="/">

@@ -1,6 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1681949753189" clover="3.2.0">
-  <project timestamp="1681949753190" name="All files">
-    <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0" elements="0" coveredelements="0" complexity="0" loc="0" ncloc="0" packages="0" files="0" classes="0"/>
+<coverage generated="1682606592934" clover="3.2.0">
+  <project timestamp="1682606592934" name="All files">
+    <metrics statements="21" coveredstatements="16" conditionals="6" coveredconditionals="2" methods="12" coveredmethods="6" elements="39" coveredelements="24" complexity="0" loc="21" ncloc="21" packages="5" files="7" classes="7"/>
+    <package name="config.jest">
+      <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <file name="jestEmptyComponent.tsx" path="/Users/maxjr/Downloads/DEV/the-best-app/config/jest/jestEmptyComponent.tsx">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="4" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.shared.config.i18n">
+      <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="i18n.ts" path="/Users/maxjr/Downloads/DEV/the-best-app/src/shared/config/i18n/i18n.ts">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="7" count="1" type="stmt"/>
+      </file>
+      <file name="i18nForTests.ts" path="/Users/maxjr/Downloads/DEV/the-best-app/src/shared/config/i18n/i18nForTests.ts">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="4" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.shared.lib.tests.renderWithTranslation">
+      <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <file name="renderWithTranslation.tsx" path="/Users/maxjr/Downloads/DEV/the-best-app/src/shared/lib/tests/renderWithTranslation/renderWithTranslation.tsx">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="10" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.shared.ui.buttons">
+      <metrics statements="2" coveredstatements="2" conditionals="2" coveredconditionals="1" methods="2" coveredmethods="1"/>
+      <file name="Button.tsx" path="/Users/maxjr/Downloads/DEV/the-best-app/src/shared/ui/buttons/Button.tsx">
+        <metrics statements="2" coveredstatements="2" conditionals="2" coveredconditionals="1" methods="2" coveredmethods="1"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="15" count="3" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.widgets.header.ui">
+      <metrics statements="14" coveredstatements="9" conditionals="4" coveredconditionals="1" methods="8" coveredmethods="3"/>
+      <file name="Categories.tsx" path="/Users/maxjr/Downloads/DEV/the-best-app/src/widgets/header/ui/Categories.tsx">
+        <metrics statements="7" coveredstatements="4" conditionals="2" coveredconditionals="1" methods="4" coveredmethods="1"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="12" count="0" type="stmt"/>
+        <line num="13" count="0" type="stmt"/>
+        <line num="16" count="1" type="stmt"/>
+        <line num="19" count="0" type="stmt"/>
+      </file>
+      <file name="Header.tsx" path="/Users/maxjr/Downloads/DEV/the-best-app/src/widgets/header/ui/Header.tsx">
+        <metrics statements="7" coveredstatements="5" conditionals="2" coveredconditionals="0" methods="4" coveredmethods="2"/>
+        <line num="17" count="1" type="stmt"/>
+        <line num="18" count="1" type="stmt"/>
+        <line num="19" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="22" count="1" type="stmt"/>
+        <line num="23" count="2" type="stmt"/>
+        <line num="24" count="0" type="stmt"/>
+        <line num="27" count="1" type="stmt"/>
+      </file>
+    </package>
   </project>
 </coverage>

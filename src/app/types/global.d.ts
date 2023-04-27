@@ -1,15 +1,14 @@
 declare module "*.scss" {
-  interface IClassnames {
+  interface IClassNames {
     [className: string]: string;
   }
-  const classNames: IClassnames;
+  const classNames: IClassNames;
   export = classNames;
 }
 
 declare module "*.png";
 declare module "*.jpg";
 declare module "*.jpeg";
-
 declare module "*.svg" {
   import React from "react";
 
