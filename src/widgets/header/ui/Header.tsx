@@ -4,6 +4,8 @@ import HeartIcon from "shared/assets/icons/heart.svg";
 import UserIcon from "shared/assets/icons/user.svg";
 import SearchIcon from "shared/assets/icons/search.svg";
 import GlobeIcon from "shared/assets/icons/globe.svg";
+import MoonIcon from "shared/assets/icons/moon.svg";
+import SunIcon from "shared/assets/icons/sun.svg";
 import logo from "shared/assets/images/logo.png";
 import { Button } from "shared/ui/buttons/Button";
 import { useTranslation } from "react-i18next";
@@ -13,7 +15,11 @@ import Categories from "./Categories";
 
 import styles from "../styles/Header.module.scss";
 
-export function Header() {
+interface HeaderProps {
+  changeTheme: () => void;
+}
+
+export function Header({ changeTheme }: HeaderProps) {
   const { t } = useTranslation();
   const changeLanguage = async () => {
     i18n.changeLanguage(i18n.language === "en" ? "ru" : "en");
@@ -36,7 +42,7 @@ export function Header() {
           <Categories />
           <input type="text" placeholder={t("header.search_placeholder")} />
           <button className={styles.searchButton} type="button">
-            <SearchIcon width="24px" height="24px" />
+            <SearchIcon />
           </button>
         </div>
         <div className={styles.userButtons}>
@@ -51,6 +57,9 @@ export function Header() {
           </Button>
           <Button onClick={changeLanguage} type="button">
             <GlobeIcon />
+          </Button>
+          <Button onClick={changeTheme} type="button">
+            <MoonIcon />
           </Button>
         </div>
       </div>

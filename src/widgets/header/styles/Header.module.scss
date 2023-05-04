@@ -9,7 +9,8 @@
   padding: 0 20px;
   border-radius: 0 0 30px 30px;
   box-shadow: rgb(0 0 0 / 10%) 0 1px 20px;
-  background-color: #fff;
+
+  background-color: inherit;
 }
 
 .headerWrapper {
@@ -37,14 +38,15 @@
   align-items: center;
   flex: 1;
   height: 80px;
-  padding-left: 10px;
+  padding: 0 20px;
 
   input {
     height: 40px;
     width: 100%;
     padding: 0 10px;
-    background-color: rgb(237 237 237);
-    border: none;
+
+    background-color: inherit;
+    border: 1px solid rgb(229 49 56);
   }
 
   @media (width <=800px) {
@@ -54,9 +56,10 @@
 
 .searchButton {
   display: flex;
+  flex-shrink: 0;
   justify-content: center;
   align-items: center;
-  width: 50px;
+  width: 40px;
   height: 40px;
   margin-right: 10px;
   background-color: rgb(229 49 56);

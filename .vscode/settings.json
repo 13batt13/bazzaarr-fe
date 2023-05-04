@@ -14,5 +14,6 @@
   "less.validate": false,
   "scss.validate": false,
   "stylelint.enable": true,
-  "stylelint.validate": ["css", "scss"]
+  "stylelint.validate": ["css", "scss"],
+  "jestrunner.configPath": "config/jest/jest.config.ts"
 }

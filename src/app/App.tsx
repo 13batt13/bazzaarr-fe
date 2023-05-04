@@ -4,6 +4,8 @@ import { Header } from "widgets/header";
 import "./styles/index.scss";
 import { Suspense, useEffect } from "react";
 import { useNavigate } from "react-router";
+import { classNames } from "shared/lib/classNames/classNames";
+import { useTheme } from "app/providers/themeProvider";
 
 export default function App() {
   const navigate = useNavigate();
@@ -11,10 +13,14 @@ export default function App() {
     navigate(window.location.pathname);
   }, []);
 
+  const { theme, changeTheme } = useTheme();
+
   return (
-    <Suspense fallback="">
-      <Header />
-      <AppRouter />
-    </Suspense>
+    <div className={classNames("app", {}, [theme])}>
+      <Suspense fallback="">
+        <Header changeTheme={changeTheme} />
+        <AppRouter />
+      </Suspense>
+    </div>
   );
 }
