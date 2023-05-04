@@ -1,3 +1,3 @@
-import Favorites from "./Favorites";
+import Favorites from "./ui/Favorites";
 
 export default Favorites;

@@ -1,6 +1,6 @@
 import { renderWithTranslation } from "shared/lib/tests/renderWithTranslation/renderWithTranslation";
 import { BrowserRouter } from "react-router-dom";
-import { Header } from "./Header";
+import { Header } from "../Header";
 
 describe("Header test", () => {
   test("renders", () => {

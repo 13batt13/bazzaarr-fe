@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
-import styles from "widgets/header/styles/Categories.module.scss";
 import { MouseEventHandler, useState } from "react";
 import { useTranslation } from "react-i18next";
+import styles from "./Categories.module.scss";
 
 export default function Categories() {
   const { t } = useTranslation();

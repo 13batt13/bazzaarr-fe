@@ -13,7 +13,7 @@ import i18n from "shared/config/i18n/i18n";
 
 import Categories from "./Categories";
 
-import styles from "../styles/Header.module.scss";
+import styles from "./Header.module.scss";
 
 interface HeaderProps {
   changeTheme: () => void;
