@@ -6,7 +6,15 @@
   border-radius: 8px;
   height: 40px;
   background-color: transparent;
-  color: rgb(229 49 56);
+
   font-size: 13px;
   cursor: pointer;
+}
+
+.red {
+  color: var(--accent-color);
+}
+
+.black {
+  color: var(--primary-color);
 }

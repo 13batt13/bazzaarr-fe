@@ -7,20 +7,20 @@ import GlobeIcon from "shared/assets/icons/globe.svg";
 import MoonIcon from "shared/assets/icons/moon.svg";
 import SunIcon from "shared/assets/icons/sun.svg";
 import logo from "shared/assets/images/logo.png";
-import { Button } from "shared/ui/buttons/Button";
+import { Button, ButtonTheme } from "shared/ui/buttons/Button";
 import { useTranslation } from "react-i18next";
 import i18n from "shared/config/i18n/i18n";
 
+import { useTheme } from "app/providers/themeProvider";
+import { Theme } from "app/providers/themeProvider/lib/ThemeContext";
 import Categories from "./Categories";
 
 import styles from "./Header.module.scss";
 
-interface HeaderProps {
-  changeTheme: () => void;
-}
-
-export function Header({ changeTheme }: HeaderProps) {
+export function Header() {
   const { t } = useTranslation();
+  const { theme, changeTheme } = useTheme();
+
   const changeLanguage = async () => {
     i18n.changeLanguage(i18n.language === "en" ? "ru" : "en");
   };
@@ -48,18 +48,23 @@ export function Header({ changeTheme }: HeaderProps) {
         <div className={styles.userButtons}>
           <Button
             title={t("header.wishlist")}
+            theme={ButtonTheme.RED}
             onClick={navigateTo("/favorites")}
           >
             <HeartIcon />
           </Button>
-          <Button title={t("header.log_in")} onClick={navigateTo("/profile")}>
+          <Button
+            title={t("header.log_in")}
+            theme={ButtonTheme.RED}
+            onClick={navigateTo("/profile")}
+          >
             <UserIcon />
           </Button>
           <Button onClick={changeLanguage} type="button">
             <GlobeIcon />
           </Button>
           <Button onClick={changeTheme} type="button">
-            <MoonIcon />
+            {theme === Theme.DARK ? <SunIcon /> : <MoonIcon />}
           </Button>
         </div>
       </div>

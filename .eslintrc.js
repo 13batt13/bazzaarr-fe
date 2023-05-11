@@ -9,6 +9,7 @@ module.exports = {
     "airbnb",
     "plugin:prettier/recommended",
     "plugin:i18next/recommended",
+    "plugin:storybook/recommended",
   ],
   parser: "@typescript-eslint/parser",
   parserOptions: {
@@ -22,15 +23,18 @@ module.exports = {
   rules: {
     "react/jsx-filename-extension": [
       2,
-      { extensions: [".js", ".jsx", ".tsx"] },
+      {
+        extensions: [".js", ".jsx", ".tsx"],
+      },
     ],
     "import/no-unresolved": "off",
     "import/prefer-default-export": "off",
-    "no-unused-vars": "warn",
+    "no-unused-vars": "off",
+    "@typescript-eslint/no-unused-vars": ["warn"],
     "react/require-default-props": "off",
     "react/react-in-jsx-scope": "off",
-    "react/jsx-props-no-spreading": "warn",
     "react/function-component-definition": "off",
+    "react/jsx-props-no-spreading": "off",
     "no-shadow": "off",
     "import/extensions": "off",
     "import/no-extraneous-dependencies": "off",

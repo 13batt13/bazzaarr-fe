@@ -4,12 +4,9 @@ import { Header } from "../Header";
 
 describe("Header test", () => {
   test("renders", () => {
-    const { getByTestId } = renderWithTranslation(
-      <Header changeTheme={() => true} />,
-      {
-        wrapper: BrowserRouter,
-      }
-    );
+    const { getByTestId } = renderWithTranslation(<Header />, {
+      wrapper: BrowserRouter,
+    });
 
     expect(getByTestId("header")).toBeInTheDocument();
   });

@@ -13,12 +13,12 @@ export default function App() {
     navigate(window.location.pathname);
   }, []);
 
-  const { theme, changeTheme } = useTheme();
+  const { theme } = useTheme();
 
   return (
     <div className={classNames("app", {}, [theme])}>
       <Suspense fallback="">
-        <Header changeTheme={changeTheme} />
+        <Header />
         <AppRouter />
       </Suspense>
     </div>
