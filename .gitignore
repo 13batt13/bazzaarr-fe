@@ -1,5 +1,12 @@
+#build
 /build
+
+#dependencies
 node_modules
-.idea
+
+#testing
 /coverage
+
+#IDE
 /.vscode
+.idea
