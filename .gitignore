@@ -7,6 +7,9 @@ node_modules
 #testing
 /coverage
 
+#storybook
+/storybook-static
+
 #IDE
-/.vscode
+.vscode
 .idea
