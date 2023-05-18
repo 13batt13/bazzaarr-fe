@@ -40,6 +40,11 @@ export default function Home() {
               {/* eslint-disable-next-line i18next/no-literal-string */}
               <span>Product 2</span>
             </div>
+            <div className={styles.historyItem}>
+              <div />
+              {/* eslint-disable-next-line i18next/no-literal-string */}
+              <span>Product 3</span>
+            </div>
           </div>
         </div>
       </div>
