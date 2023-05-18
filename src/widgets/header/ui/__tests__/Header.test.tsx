@@ -1,12 +1,9 @@
-import { renderWithTranslation } from "shared/lib/tests/renderWithTranslation/renderWithTranslation";
-import { BrowserRouter } from "react-router-dom";
+import { componentRender } from "shared/lib/tests/componentRender/componentRender";
 import { Header } from "../Header";
 
 describe("Header test", () => {
   test("renders", () => {
-    const { getByTestId } = renderWithTranslation(<Header />, {
-      wrapper: BrowserRouter,
-    });
+    const { getByTestId } = componentRender(<Header />);
 
     expect(getByTestId("header")).toBeInTheDocument();
   });

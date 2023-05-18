@@ -4,11 +4,13 @@
 #dependencies
 node_modules
 
-#testing
-/coverage
-
 #storybook
 /storybook-static
+
+#testing
+/coverage
+.loki/report.html
+.loki/report.json
 
 #IDE
 .vscode

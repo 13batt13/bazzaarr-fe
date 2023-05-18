@@ -20,13 +20,19 @@ jobs:
         run: yarn
       - name: build project
         run: yarn build:prod
+        if: always()
       - name: lint typescript
         run: yarn lint:ts
+        if: always()
       - name: lint styles
         run: yarn lint:scss
+        if: always()
       - name: unit tests
         run: yarn test:unit
+        if: always()
       # - name: build storybook
       #   run: yarn storybook:build
+      #   if: always()
       # - name: screeenshot tests
       #   run: yarn test:ui:ci
+      #   if: always()
