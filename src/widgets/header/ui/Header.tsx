@@ -42,7 +42,7 @@ export function Header() {
           <Categories />
           <input type="text" placeholder={t("header.search_placeholder")} />
           <button className={styles.searchButton} type="button">
-            <SearchIcon />
+            <SearchIcon className={styles.searchIcon} />
           </button>
         </div>
         <div className={styles.userButtons}>
@@ -51,20 +51,24 @@ export function Header() {
             theme={ButtonTheme.RED}
             onClick={navigateTo("/favorites")}
           >
-            <HeartIcon />
+            <HeartIcon className={styles.icon} />
           </Button>
           <Button
             title={t("header.log_in")}
             theme={ButtonTheme.RED}
             onClick={navigateTo("/profile")}
           >
-            <UserIcon />
+            <UserIcon className={styles.icon} />
           </Button>
           <Button onClick={changeLanguage} type="button">
-            <GlobeIcon />
+            <GlobeIcon className={styles.icon} />
           </Button>
           <Button onClick={changeTheme} type="button">
-            {theme === Theme.DARK ? <SunIcon /> : <MoonIcon />}
+            {theme === Theme.DARK ? (
+              <SunIcon className={styles.icon} />
+            ) : (
+              <MoonIcon className={styles.icon} />
+            )}
           </Button>
         </div>
       </div>
