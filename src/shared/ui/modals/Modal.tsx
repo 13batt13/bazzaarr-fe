@@ -15,10 +15,25 @@ interface ModalProps {
   className?: string;
   isOpen?: boolean;
   onClose?: () => void;
+  lazy?: boolean;
 }
 
-export const Modal = ({ children, className, isOpen, onClose }: ModalProps) => {
+export const Modal = ({
+  children,
+  className,
+  isOpen,
+  onClose,
+  lazy,
+}: ModalProps) => {
   const [isClosing, setIsClosing] = useState(false);
+  const [isMounted, setIsMounted] = useState(false);
+
+  useEffect(() => {
+    if (isOpen) {
+      setIsMounted(true);
+    }
+  }, [isOpen]);
+
   const timerRef = useRef<ReturnType<typeof setTimeout>>();
 
   const handleClose = useCallback(() => {
@@ -60,6 +75,10 @@ export const Modal = ({ children, className, isOpen, onClose }: ModalProps) => {
     [styles.opened]: isOpen,
     [styles.closing]: isClosing,
   };
+
+  if (lazy && !isMounted) {
+    return null;
+  }
 
   return (
     <Portal>
