@@ -1,4 +1,5 @@
 /* eslint-disable i18next/no-literal-string */
+import { Counter } from "entities/counter";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { Button, ButtonTheme } from "shared/ui/buttons/Button";
@@ -19,6 +20,7 @@ export default function Profile() {
       >
         TEST MODAL
       </Button>
+      <Counter />
       <Modal isOpen={isOpen} onClose={() => setIsOpen(false)}>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum tenetur
         consequuntur quibusdam quo placeat. Vel minima nam fugit reprehenderit
