@@ -4,7 +4,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  min-width: 850px;
+  min-width: 900px;
   height: 80px;
   padding: 0 20px;
   border-radius: 0 0 30px 30px;
@@ -23,9 +23,8 @@
 
 .logoWrapper {
   display: flex;
-  justify-content: center;
   align-items: center;
-  width: 280px;
+  width: 300px;
   height: 80px;
 
   img {
@@ -47,10 +46,6 @@
 
     background-color: inherit;
     border: 1px solid rgb(229 49 56);
-  }
-
-  @media (width <=800px) {
-    border: none;
   }
 }
 
@@ -75,7 +70,7 @@
   align-items: center;
   gap: 24px;
   height: 80px;
-  width: 280px;
+  width: 300px;
 }
 
 .icon {

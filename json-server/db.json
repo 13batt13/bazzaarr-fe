@@ -1,4 +1,11 @@
 {
+  "users": [
+    {
+      "id": "1",
+      "name": "Max",
+      "password": "1234"
+    }
+  ],
   "items": [
     {
       "id": "1",

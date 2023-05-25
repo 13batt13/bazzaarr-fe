@@ -14,6 +14,7 @@ import i18n from "shared/config/i18n/i18n";
 import { useTheme } from "app/providers/themeProvider";
 import { Theme } from "app/providers/themeProvider/lib/ThemeContext";
 import Categories from "./Categories";
+import AuthButton from "./AuthButton";
 
 import styles from "./Header.module.scss";
 
@@ -29,6 +30,8 @@ export function Header() {
   const navigateTo = (to: string) => () => {
     navigate(to);
   };
+
+  const isUserAuthorized = false;
 
   return (
     <header data-testid="header" className={styles.root}>
@@ -53,13 +56,17 @@ export function Header() {
           >
             <HeartIcon className={styles.icon} />
           </Button>
-          <Button
-            title={t("header.log_in")}
-            theme={ButtonTheme.RED}
-            onClick={navigateTo("/profile")}
-          >
-            <UserIcon className={styles.icon} />
-          </Button>
+          {isUserAuthorized ? (
+            <Button
+              title={t("header.log_in")}
+              theme={ButtonTheme.RED}
+              onClick={navigateTo("/profile")}
+            >
+              <UserIcon className={styles.icon} />
+            </Button>
+          ) : (
+            <AuthButton />
+          )}
           <Button onClick={changeLanguage} type="button">
             <GlobeIcon className={styles.icon} />
           </Button>
