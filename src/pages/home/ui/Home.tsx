@@ -10,11 +10,11 @@ export default function Home() {
 
   const [productItems, setProductItems] = useState<ProductItem[]>([]);
 
-  useEffect(() => {
-    axios.get("http://localhost:4000/items").then((response) => {
-      setProductItems(response.data);
-    });
-  }, []);
+  // useEffect(() => {
+  //   axios.get("http://localhost:4000/items").then((response) => {
+  //     setProductItems(response.data);
+  //   });
+  // }, []);
 
   return (
     <div className={styles.root}>

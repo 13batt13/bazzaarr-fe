@@ -6,9 +6,11 @@
   "header": {
     "categories": "categories",
     "log_in": "log_in",
+    "profile": "profile",
     "search_placeholder": "search_placeholder",
     "translate_btn": "translate_btn",
-    "wishlist": "wishlist"
+    "wishlist": "wishlist",
+    "your_profile": "your_profile"
   },
   "home": {
     "for_you": "for_you",

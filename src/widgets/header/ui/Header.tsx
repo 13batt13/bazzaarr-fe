@@ -13,6 +13,8 @@ import i18n from "shared/config/i18n/i18n";
 
 import { useTheme } from "app/providers/themeProvider";
 import { Theme } from "app/providers/themeProvider/lib/ThemeContext";
+import { useSelector } from "react-redux";
+import { getUserAuthData } from "entities/user";
 import Categories from "./Categories";
 import AuthButton from "./AuthButton";
 
@@ -31,7 +33,7 @@ export function Header() {
     navigate(to);
   };
 
-  const isUserAuthorized = false;
+  const authData = useSelector(getUserAuthData);
 
   return (
     <header data-testid="header" className={styles.root}>
@@ -56,9 +58,9 @@ export function Header() {
           >
             <HeartIcon className={styles.icon} />
           </Button>
-          {isUserAuthorized ? (
+          {authData ? (
             <Button
-              title={t("header.log_in")}
+              title={t("header.your_profile")}
               theme={ButtonTheme.RED}
               onClick={navigateTo("/profile")}
             >

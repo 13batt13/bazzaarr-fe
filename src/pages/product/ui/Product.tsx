@@ -24,11 +24,11 @@ export default function Product() {
   const [productItem, setProductItem] =
     useState<ProductItem>(initialProductItem);
 
-  useEffect(() => {
-    axios.get(`http://localhost:4000/items/${id}`).then((response) => {
-      setProductItem(response.data);
-    });
-  }, [id]);
+  // useEffect(() => {
+  //   axios.get(`http://localhost:4000/items/${id}`).then((response) => {
+  //     setProductItem(response.data);
+  //   });
+  // }, [id]);
 
   return (
     <div className={styles.root}>
