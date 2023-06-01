@@ -7,13 +7,13 @@ import { LoginModal } from "features/authByUsername";
 import styles from "./Header.module.scss";
 
 export default function Profile() {
-  const [isOpenModal, setIsOpenModal] = useState(false);
+  const [isModalOpened, setIsModalOpened] = useState(false);
 
   const showModal = () => {
-    setIsOpenModal(true);
+    setIsModalOpened(true);
   };
   const hideModal = () => {
-    setIsOpenModal(false);
+    setIsModalOpened(false);
   };
 
   return (
@@ -22,7 +22,9 @@ export default function Profile() {
         <UserIcon className={styles.icon} />
         Log In
       </Button>
-      <LoginModal isOpen={isOpenModal} onClose={hideModal} />
+      {isModalOpened && (
+        <LoginModal isOpen={isModalOpened} onClose={hideModal} />
+      )}
     </div>
   );
 }
