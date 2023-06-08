@@ -6,6 +6,16 @@
       "password": "1234"
     }
   ],
+  "profile": {
+    "first": "Max",
+    "lastname": "Sid",
+    "age": 32,
+    "currency": "RUB",
+    "country": "Russia",
+    "city": "Krasnodar",
+    "username": "Max",
+    "avatar": ""
+  },
   "items": [
     {
       "id": "1",
