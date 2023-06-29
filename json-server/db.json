@@ -7,8 +7,8 @@
     }
   ],
   "profile": {
-    "first": "Max",
-    "lastname": "Sid",
+    "firstname": "Max",
+    "lastname": "A",
     "age": 32,
     "currency": "RUB",
     "country": "Russia",

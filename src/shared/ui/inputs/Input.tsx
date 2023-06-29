@@ -4,14 +4,15 @@ import styles from "./Input.module.scss";
 
 type HTMLInputProps = Omit<
   InputHTMLAttributes<HTMLInputElement>,
-  "value" | "onChange"
+  "value" | "onChange" | "readonly"
 >;
 
 interface InputProps extends HTMLInputProps {
   className?: string;
-  value?: string;
+  value?: string | number;
   onChange?: (value: string) => void;
   type?: string;
+  readonly?: boolean;
 }
 
 export const Input = memo(
@@ -20,6 +21,7 @@ export const Input = memo(
     value,
     onChange,
     type = "text",
+    readonly = false,
     ...otherProps
   }: InputProps) => {
     const onChangeHandler = (e: ChangeEvent<HTMLInputElement>) => {
@@ -32,6 +34,7 @@ export const Input = memo(
           type={type}
           value={value}
           onChange={onChangeHandler}
+          readOnly={readonly}
           {...otherProps}
         />
       </div>
