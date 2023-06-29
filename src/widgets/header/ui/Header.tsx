@@ -22,11 +22,17 @@ import styles from "./Header.module.scss";
 
 export function Header() {
   const { t } = useTranslation();
-  const { theme, changeTheme } = useTheme();
+  const i18 = {
+    placeholder: t("header.search_placeholder"),
+    wishlist: t("header.wishlist"),
+    profile: t("header.your_profile"),
+  };
 
   const changeLanguage = async () => {
     i18n.changeLanguage(i18n.language === "en" ? "ru" : "en");
   };
+
+  const { theme, changeTheme } = useTheme();
 
   const navigate = useNavigate();
   const navigateTo = (to: string) => () => {
@@ -45,14 +51,14 @@ export function Header() {
         </div>
         <div className={styles.searchBox}>
           <Categories />
-          <input type="text" placeholder={t("header.search_placeholder")} />
+          <input type="text" placeholder={i18.placeholder} />
           <button className={styles.searchButton} type="button">
             <SearchIcon className={styles.searchIcon} />
           </button>
         </div>
         <div className={styles.userButtons}>
           <Button
-            title={t("header.wishlist")}
+            title={i18.wishlist}
             theme={ButtonTheme.RED}
             onClick={navigateTo("/favorites")}
           >
@@ -60,7 +66,7 @@ export function Header() {
           </Button>
           {authData ? (
             <Button
-              title={t("header.your_profile")}
+              title={i18.profile}
               theme={ButtonTheme.RED}
               onClick={navigateTo("/profile")}
             >

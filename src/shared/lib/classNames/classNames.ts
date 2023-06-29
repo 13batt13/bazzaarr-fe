@@ -1,9 +1,9 @@
-type Modificators = Record<string, boolean | string>;
+export type Modificators = Record<string, boolean | string | undefined>;
 
 export function classNames(
   mainClass: string,
   modificators: Modificators = {},
-  additionalClasses: string[] = []
+  additionalClasses: Array<string | undefined> = []
 ): string {
   return [
     mainClass,

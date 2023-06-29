@@ -1,6 +1,7 @@
-import { classNames } from "shared/lib/classNames/classNames";
+import { Modificators, classNames } from "shared/lib/classNames/classNames";
 import {
   MouseEvent,
+  MutableRefObject,
   ReactNode,
   useCallback,
   useEffect,
@@ -34,7 +35,7 @@ export const Modal = ({
     }
   }, [isOpen]);
 
-  const timerRef = useRef<ReturnType<typeof setTimeout>>();
+  const timerRef = useRef() as MutableRefObject<ReturnType<typeof setTimeout>>;
 
   const handleClose = useCallback(() => {
     if (onClose) {
@@ -60,10 +61,8 @@ export const Modal = ({
       window.addEventListener("keydown", handleKeyDown);
     }
     return () => {
+      clearTimeout(timerRef.current);
       window.removeEventListener("keydown", handleKeyDown);
-      if (timerRef.current) {
-        clearTimeout(timerRef.current);
-      }
     };
   }, [isOpen, handleKeyDown]);
 
@@ -71,7 +70,7 @@ export const Modal = ({
     e.stopPropagation();
   };
 
-  const mods: Record<string, boolean> = {
+  const mods: Modificators = {
     [styles.opened]: isOpen,
     [styles.closing]: isClosing,
   };
