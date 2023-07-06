@@ -5,7 +5,7 @@ import { buildSvgLoader } from "./loaders/buildSvgLoader";
 import { buildBabelLoader } from "./loaders/buildBabelLoader";
 
 export function buildLoaders({ isDev }: BuildOptions): webpack.RuleSetRule[] {
-  const babelLoader = buildBabelLoader();
+  const babelLoader = buildBabelLoader(isDev);
 
   const typescriptLoader = {
     test: /\.tsx?$/,

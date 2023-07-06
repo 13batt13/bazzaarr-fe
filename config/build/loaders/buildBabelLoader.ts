@@ -1,4 +1,6 @@
-export function buildBabelLoader() {
+import webpack from "webpack";
+
+export function buildBabelLoader(isDev: boolean): webpack.RuleSetRule {
   return {
     test: /\.(js|jsx|tsx)$/,
     exclude: /node_modules/,
@@ -11,7 +13,8 @@ export function buildBabelLoader() {
             "i18next-extract",
             { locales: ["ru", "en"], keyAsDefaultValue: true },
           ],
-        ],
+          isDev && require.resolve("react-refresh/babel"),
+        ].filter(Boolean),
       },
     },
   };
