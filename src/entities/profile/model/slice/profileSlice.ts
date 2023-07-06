@@ -8,6 +8,7 @@ const initialState: ProfileSchema = {
   isLoading: false,
   error: undefined,
   data: undefined,
+  validateErrors: [],
 };
 
 export const profileSlice = createSlice({

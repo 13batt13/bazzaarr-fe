@@ -35,7 +35,9 @@ export default function Profile() {
   const dispatch = useAppDispatch();
 
   useEffect(() => {
-    dispatch(fetchProfileData());
+    if (__PROJECT__ !== "storybook") {
+      dispatch(fetchProfileData());
+    }
   }, [dispatch]);
 
   const formData = useSelector(getProfileForm);
