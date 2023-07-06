@@ -45,7 +45,7 @@
     padding: 0 10px;
 
     background-color: inherit;
-    border: 1px solid rgb(229 49 56);
+    border: 1px solid var(--accent-color);
   }
 }
 
@@ -57,7 +57,7 @@
   width: 40px;
   height: 40px;
   margin-right: 10px;
-  background-color: rgb(229 49 56);
+  background-color: var(--accent-color);
   color: white;
   border: none;
   border-radius: 0 8px 8px 0;
